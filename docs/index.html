@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Documentation Page</title>
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h3 class="center alt">&ldquo;React Native Expo Online Single Radio App Template&rdquo; Documentation by &ldquo;Potyguara Tupinambás&rdquo; v1.0.0</h3>
+		<hr>
+		<h1 class="center">&ldquo;React Native Expo Online Single Radio App Template&rdquo;</h1>
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 19/08/2022<br>
+					By: Potyguara Tupinambás<br>
+					Email: <a href="mailto:p.tupinambas@gmail.com">p.tupinambas@gmail.com</a>
+					</strong>
+				</p>
+			</div>
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my app template. If you have any questions that are beyond the scope of this help file, please feel free to email via my CodeCanyon user page contact form <a href="https://codecanyon.net/user/ptupi">here</a>. Thanks!</p>
+			</div>
+		</div>
+		<hr>
+		<h2 id="toc" class="alt">Summary</h2>
+		<ol class="alpha">
+			<li><a href="#buyer">What You Should Know as Buyer</a></li>
+			<li><a href="#yarnInstallation">YARN Installation</a> <em class="quiet small">(You can use either, but I recommend YARN)</em></li>
+			<li><a href="#installDependencies">Install Project Dependencies</a></li>
+			<li><a href="#installDependenciesIos">Finish Project Dependencies (Mac OS)</a> <em class="quiet small">(Only on Mac OS)</em></li>
+			<li><a href="#radioFeature">Radio Player Feature</a></li>
+			<li><a href="#localizationSupport">Localization Support</a></li>
+			<li><a href="#details">Project Details</a></li>
+		</ol>
+		<hr>
+		<h3 id="buyer"><strong>A) What You Should Know as Buyer</strong> - <a href="#toc">top</a></h3>
+		<p>You must have React Native knowledge or you must me inclined to learn it.</p>
+		<p>You also need to be able to install React Native and its dependencies on your machine. To do that I recommend you to use the React Native official installation guide <a href="https://facebook.github.io/react-native/">here</a>.</p>
+		<p>You must have Expo knowledge or you must me inclined to learn it.</p>
+		<p>You also need to be able to install Expo and its dependencies on your machine. To do that I recommend you to use the Expo official installation guide <a href="https://docs.expo.dev/get-started/installation/">here</a>.</p>
+		<p>And last, but not least, in order to modify the app template, you must have knowledge in mobile technologies such as TypeScript.</p>
+		<hr>
+		<h3 id="yarnInstallation"><strong>B) YARN Installation</strong> - <a href="#toc">top</a></h3>
+		<p>To install your project dependencies, you must first install YARN on your system. From there you can go to the Installation docs.</p>
+		<p>YARN "Getting Started" page: <a href="https://classic.yarnpkg.com/en/docs/getting-started">here</a>.</p>
+		<p>With YARN installed, you can proceed to the next step.</p>
+		<hr>
+		<h3 id="installDependencies"><strong>C) Install Project Dependencies</strong> - <a href="#toc">top</a></h3>
+		<p>With YARN installed, you need to install the project dependencies. To do that you should open the command prompt (Windows), or terminal (Mac OS) ON YOUR PROJECT FOLDER and type the following commmand:</p>
+		<p><pre>yarn install</pre></p>
+		<hr>
+		<h3 id="installDependenciesIos"><strong>D) Finish Project Dependencies (Mac OS)</strong> - <a href="#toc">top</a></h3>
+		<p>If you are on a Mac OS, you need to finish installing your project dependencies by running the following commands on terminal (from your PROJECT FOLDER):</p>
+		<pre>cd ios</pre>
+		<pre>pod install</pre>
+		<hr>
+		<h3 id="radioFeature"><strong>E) Radio Player Feature</strong> - <a href="#toc">top</a></h3>
+		<p>This app template was built with a radio player from expo-av plugin. Here are some details about it to get you started:</p>
+		<ol>
+			<li>Starting radio station data is inside <strong>"{projectName}/src/utils/constants.util.ts"</strong> file</li>
+			<li>The AACP url (RADIO_STREAM_URL variable) can be obtained by installing an <strong>extension</strong> named Video DownloadHelper on you <strong>web browser</strong></li>
+			<li>You can customize background play settings by working on the staysActiveInBackground prop at "{projectName}/src/screens/Main.screen.tsx" file</li>
+			<li>For more details about the <strong>expo-av</strong> plugin, click <a href="https://docs.expo.dev/versions/latest/sdk/av/">here</a></li>
+		</ol>
+		<hr>
+		<h3 id="localizationSupport"><strong>F) Localization Support</strong> - <a href="#toc">top</a></h3>
+		<p>This app template currently has enUS language, but you can simply add more languages at the "{projectName}/src/languages" folder if you want. To do that, add a "xxYY.language.ts" file (similar to the "enUS.language.ts") and export it on "{projectName}/src/languages/languages.ts" file.</p>
+		<hr>
+		<h3 id="details"><strong>G) Project Details</strong> - <a href="#toc">top</a></h3>
+		<p>Important informations about this app template:</p>
+		<ul>
+			<li>React Native version: 0.69.4, more details <a href="https://reactnative.dev/">here</a></li>
+			<li>Expo SDK verion: ~46.0.7, more details <a href="https://docs.expo.dev/">here</a></li>
+			<li>Inside "{projectName}" folder, there is a README file that you should read in order to BUILD and UPLOAD your app</li>
+			<li>This template uses the Expo EAS Build system, read more about it <a href="https://docs.expo.dev/eas/">here</a></li>
+			<li>You must create your build profile (Expo account) if you do not have one, <a href="https://expo.dev/">here</a></li>
+			<ol>
+				<li>After this, you need to configure this template's app.json file in order to link it to your build profile (Expo account)</li>
+			</ol>
+			<li>Using React Navigation plugin, version 6.x, more details <a href="https://reactnavigation.org/">here</a></li>
+			<ol>
+				<li>Stack navigator added (check {projectName}/src/routes/index.ts file)</li>
+			</ol>
+		</ul>
+		<hr>
+		<p>Once again, thank you for purchasing this app template. As I said at the beginning, I'll be glad to help you if you have any questions relating to this application. No guarantees, but I'll do my best to assist. If you have a more general question relating to the templates on CodeCanyon, you might consider visiting the forums and asking your question.</p> 
+		<p>Best regards,</p>
+		<p class="append-bottom alt large"><strong>Potyguara Tupinambás</strong></p>
+		<img src="assets/images/mappe.png" alt="mappe Logo" style="height: 64px; margin-bottom: 24px;"/>
+		<p><a href="#toc">Go To Summary</a></p>
+		<hr class="space">
+	</div>
+</body>
+</html>
